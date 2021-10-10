@@ -1,11 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
-using System;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace WebApplication3.Pages
 {
@@ -22,7 +16,7 @@ namespace WebApplication3.Pages
 
         public void OnGet()
         {
-            Products = _productService._products;
+            Products = _productService.Products;
         }
     }
 }
