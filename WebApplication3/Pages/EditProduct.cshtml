@@ -1,0 +1,21 @@
+﻿@page "{id}"
+@model WebApplication3.Pages.EditProductModel
+@{
+    ViewData["Title"] = "Product";
+}
+
+<h1>Edit @Model.Input.Name</h1>
+
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Input.Name"></label>
+        <input class="form-control" asp-for="Input.Name" />
+        <span asp-validation-for="Input.Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Input.Price"></label>
+        <input class="form-control" asp-for="Input.Price" />
+        <span asp-validation-for="Input.Price" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
